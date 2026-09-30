@@ -1,7 +1,28 @@
+"""
+題目：使用牛頓迭代法 (Newton-Raphson Method) 求解實數的立方根 (Cube Root)
+數學原理：
+求解方程式 f(x) = x^3 - a = 0 的根。
+牛頓法迭代公式：
+  x_{n+1} = x_n - f(x_n) / f'(x_n)
+          = x_n - (x_n^3 - a) / (3 * x_n^2)
+          = (2 * x_n + a / (x_n^2)) / 3
+"""
+
 import math
 
 def solve_cube_root(a, x0=1.0, max_iter=1000, tol=1e-7, verbose=True):
-
+    """
+    使用牛頓迭代法計算 a 的立方根 (cbrt(a))
+    參數:
+      a (float): 欲求解立方根的目標數值
+      x0 (float): 初始猜測值，預設為 1.0
+      max_iter (int): 最大迭代次數限制，預設為 1000
+      tol (float): 容許誤差 (Tolerance)，預設為 1e-7
+      verbose (bool): 是否印出每一代的詳細過程，預設為 True
+    回傳:
+      float: 立方根的近似解
+      int: 總共使用的迭代次數
+    """
     if a == 0:
         return 0.0, 0
 
@@ -13,7 +34,6 @@ def solve_cube_root(a, x0=1.0, max_iter=1000, tol=1e-7, verbose=True):
         print("-" * 55)
 
     for k in range(1, max_iter + 1):
-
         x_next = (2.0 * x + a / (x ** 2)) / 3.0
         
         diff = abs(x_next - x)
