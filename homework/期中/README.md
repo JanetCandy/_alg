@@ -4,7 +4,7 @@
 | --- | --- | --- | --- | --- | --- |
 | 1 | 查表法 | 是 | | | [week1](https://github.com/JanetCandy/_alg/tree/main/homework/week1) |
 | 2 | 複雜度 | 是 | | | [week2](https://github.com/JanetCandy/_alg/tree/main/homework/week2) |
-| 3 | 列舉＋暴力 | 是 | | [week3](https://github.com/JanetCandy/_alg/tree/main/homework/week3) | |
+| 3 | 列舉＋暴力 | 是 | | | [week3](https://github.com/JanetCandy/_alg/tree/main/homework/week3) |
 | 4 | 迭代法 | 是 | | | [week4](https://github.com/JanetCandy/_alg/tree/main/homework/week4) |
 | 5 | 遞迴，函數式編程 | 是 | | | [week5](https://github.com/JanetCandy/_alg/tree/main/homework/week5) |
 | 6 | Lambda Calculus | 是 | | | [week6](https://github.com/JanetCandy/_alg/tree/main/homework/week6) |
